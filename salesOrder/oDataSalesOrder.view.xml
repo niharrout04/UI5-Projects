@@ -21,7 +21,7 @@
                     </fb:FilterGroupItem>
                     <fb:FilterGroupItem name="SupplierName" label="Billing Status" groupName="Group1" visibleInFilterBar="true">
                         <fb:control>
-                            <Input id="bilStatusgit branch -M main" type="Text" change="onChange" />
+                            <Input id="bilStatus" type="Text" change="onChange" />
                         </fb:control>
                     </fb:FilterGroupItem>
                 </fb:filterGroupItems>
@@ -58,7 +58,6 @@
                     </ColumnListItem>
                 </items>
             </Table>
-
 
         </content>
     </Page>
