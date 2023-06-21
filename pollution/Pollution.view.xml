@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.sap.incture.project1.controller.pollution.Pollution"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:l="sap.ui.layout"
+	xmlns:fiori="sap.ui.webc.fiori"
+	xmlns:core="sap.ui.core"
+	xmlns:unified="sap.ui.unified"
+	xmlns="sap.m" height="100%">
+	<Page id ="vacc" showHeader="true">
+		<content>
+			<Text text="Main"/>
+
+			
+
+			
+		
+
+		
+		</content>
+
+	</Page>
+</mvc:View>

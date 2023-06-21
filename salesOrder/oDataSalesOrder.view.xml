@@ -1,0 +1,65 @@
+<mvc:View controllerName="com.sap.incture.project1.controller.salesOrder.oDataSalesOrder"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:unified="sap.ui.unified"
+    xmlns="sap.m" height="100%">
+    <Page id="salesorder" showHeader="true">
+        <content>
+            <fb:FilterBar id="filterbar" reset="onReset" clear="onClear" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+                <fb:filterGroupItems>
+                    <fb:FilterGroupItem name="Name" label="Business Partner" groupName="Group1" visibleInFilterBar="true">
+                        <fb:control>
+                            <Input id="busPart" type="Text" change="onChange" />
+                        </fb:control>
+                    </fb:FilterGroupItem>
+                    <fb:FilterGroupItem name="Category" label="Delivery Status" groupName="Group1" visibleInFilterBar="true">
+                        <fb:control>
+                            <Input id="delStatus" type="Text" change="onChange" />
+                        </fb:control>
+                    </fb:FilterGroupItem>
+                    <fb:FilterGroupItem name="SupplierName" label="Billing Status" groupName="Group1" visibleInFilterBar="true">
+                        <fb:control>
+                            <Input id="bilStatusgit branch -M main" type="Text" change="onChange" />
+                        </fb:control>
+                    </fb:FilterGroupItem>
+                </fb:filterGroupItems>
+            </fb:FilterBar>
+
+            <Table id="idProductsTable" inset="false" >
+                <columns>
+                    <Column width="12em">
+                        <Text text="Sales Order Id" />
+                    </Column>
+                    <Column minScreenWidth="Tablet" demandPopin="true">
+                        <Text text="Customer Id" />
+                    </Column>
+                    <Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+                        <Text text="Billing Status" />
+                    </Column>
+                    <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                        <Text text="Delivery Status" />
+                    </Column>
+                    <Column hAlign="End">
+                        <Text text="Customer Name" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle">
+                        <cells>
+                            <ObjectIdentifier title="{Name}" text="{SalesOrderID}"/>
+                            <Text text="{CustomerID}" />
+                            <Text text="{BillingStatus}" />
+                            <Text text="{DeliveryStatus}" />
+                            <Text text="{CustomerName}" />
+                            
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+
+        </content>
+    </Page>
+</mvc:View>

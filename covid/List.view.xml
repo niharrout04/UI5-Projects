@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.sap.incture.project1.controller.covid.List"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:grid="sap.ui.layout.cssgrid"
+	xmlns="sap.m" height="100%">
+	<Page id="tiles" showHeader="false">
+		<List id="myList" headerText="Total Cases {Latest>/data/summary/total}" items="{Latest>/data/regional}" footerText="Latest Covid Count ">
+			<items>
+				<StandardListItem  title="{Latest>loc}" 
+				description="Total cases {Latest>confirmedCasesIndian}" 
+				info="Deaths {Latest>deaths}"/>
+			</items>
+		</List>
+
+	</Page>
+</mvc:View>

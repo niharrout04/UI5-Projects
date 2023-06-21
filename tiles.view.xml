@@ -1,0 +1,23 @@
+<mvc:View controllerName="com.sap.incture.project1.controller.tiles"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="tiles" showHeader="false">
+
+        <l:VerticalLayout>
+            <l:HorizontalLayout content="{tiles>/}" allowWrapping="true">
+
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{tiles>title}" press="press(${tiles>route})">
+                    <TileContent>
+                        <ImageContent src="{tiles>src}" />
+                    </TileContent>
+
+                </GenericTile>
+
+            </l:HorizontalLayout>
+        </l:VerticalLayout>
+
+    </Page>
+
+
+</mvc:View>
